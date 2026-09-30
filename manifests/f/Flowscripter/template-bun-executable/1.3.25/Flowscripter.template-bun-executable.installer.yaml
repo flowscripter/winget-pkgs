@@ -4,6 +4,7 @@
 PackageIdentifier: Flowscripter.template-bun-executable
 PackageVersion: 1.3.25
 InstallerType: zip
+Scope: machine
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: template-bun-executable.exe
