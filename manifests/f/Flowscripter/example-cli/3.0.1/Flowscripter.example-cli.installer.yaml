@@ -11,7 +11,6 @@ InstallModes:
 - silent
 UpgradeBehavior: install
 ReleaseDate: 2026-09-30
-ElevationRequirement: elevationProhibited
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/flowscripter/example-cli/releases/download/v3.0.1/example-cli_Windows_x64.zip
