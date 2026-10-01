@@ -1,0 +1,23 @@
+# Created with WinGet Releaser using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Flowscripter.example-cli
+PackageVersion: 3.0.5
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: example-cli.exe
+InstallModes:
+- silent
+UpgradeBehavior: install
+ReleaseDate: 2026-10-01
+ElevationRequirement: elevationProhibited
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/flowscripter/example-cli/releases/download/v3.0.5/example-cli_Windows_x64.zip
+  InstallerSha256: 4CDDF352A76D304F623B24B25C4BD7F5DFE585EDCB9C3668D59B759195729BB6
+- Architecture: arm64
+  InstallerUrl: https://github.com/flowscripter/example-cli/releases/download/v3.0.5/example-cli_Windows_arm64.zip
+  InstallerSha256: 8559AF7DD6A0947A29E5FC4DC51F7FDFD7C8BE4B99431D1E4A6F3B6AFD07CC34
+ManifestType: installer
+ManifestVersion: 1.12.0
