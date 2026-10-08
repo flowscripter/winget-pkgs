@@ -1,0 +1,30 @@
+# Created with WinGet Releaser using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Flowscripter.flowscripter-io-cli
+PackageVersion: 3.0.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: flowscripter-io-cli.exe
+Scope: machine
+InstallModes:
+- silent
+UpgradeBehavior: install
+ReleaseDate: 2026-10-08
+ElevationRequirement: elevationRequired
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/flowscripter/flowscripter-io-cli/releases/download/v3.0.0/flowscripter-io-cli_Windows_x64.zip
+  InstallerSha256: 18CEFF3ADB08ACA73D1F7861D6BDCD6294494FAAD14EBDC7AA702CD1B8F63286
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+- Architecture: arm64
+  InstallerUrl: https://github.com/flowscripter/flowscripter-io-cli/releases/download/v3.0.0/flowscripter-io-cli_Windows_arm64.zip
+  InstallerSha256: 087FC8B47642CC56B9184AC7C475AD88F3D8B7B403680623C1F751BC8EA70C3A
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.arm64
+ManifestType: installer
+ManifestVersion: 1.12.0
